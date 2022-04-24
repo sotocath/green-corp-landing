@@ -51,6 +51,7 @@ button {
   background: url('img/back.png') no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative
 }
 
 .about_image {
@@ -360,6 +361,12 @@ h3{
   display: flex;
   justify-content: center;
 }
+.orb-canvas{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
 
 
 
@@ -546,3 +553,8 @@ h3{
     padding: 50px 10px;
   }
 }
+
+
+
+/* В файле main.css добавьте стили для элемента с классом, равным orb-canvas. Элемент должен быть позиционирован абсолютно (свойство position) и растянут во всю ширину и высоту родительского элемента. Для этого надо выставить свойства top: 0, right: 0 и выставить высоту (height), равную 100%.
+Для тега секции с классом about добавьте относительное позиционирование (position: relative), чтобы холст позиционировался относительно него. */
